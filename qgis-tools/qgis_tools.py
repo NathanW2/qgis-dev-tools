@@ -24,6 +24,8 @@ def main(args):
         format_code(rootfolder)
     if args.prepare_commit:
         prepare_commit(rootfolder)
+    if args.make_pizza:
+        make_pizza()
 
 
 def format_code(rootfolder):
@@ -45,3 +47,7 @@ def prepare_commit(rootfolder):
     prepare = os.path.join(scripts, "prepare-commit.sh")
     os.chdir(rootfolder)
     run("Prepare Commit", prepare)
+
+
+def make_pizza():
+    print("why am i so hungry man")

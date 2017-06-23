@@ -25,6 +25,9 @@ parser.add_argument('--prepare-commit', action='store_true',
 parser.add_argument('--root-folder', type=str,
                     help='Path to the root folder of QGIS src',
                     default=ROOTFOLDER)
+
+parser.add_argument('--make-pizza', action='store_true',
+                    help='')
                    
 args = parser.parse_args()
 
